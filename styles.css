@@ -430,7 +430,8 @@ body {
     height: 100px;
     background-color: black;
   }
-  
+      
+
 
   .marquee {
     width: 100%;
@@ -522,19 +523,35 @@ body {
     z-index: 10; /* Ensures it stays on top */
     pointer-events: none; /* Prevents it from interfering with clicks */
   }
+     
+.zigzag-container1 {
+    position: relative; /* Ensures the zigzag frame can overlay other elements */
+    width: 100%;
+    height: 100vh; /* Adjust based on your content */
+  }
+.zigzag-frame1 {
+    position: relative;
+    top: 20px; /* Move it down as needed */
+    left: 50px; /* Move it right as needed */
+    z-index: 10; /* Ensures it stays on top */
+    pointer-events: none; /* Prevents it from interfering with clicks */
+  }
 
 .cert-box {
     position: absolute; /* Position it underneath everything */
     width: 100%; /* 100% of the viewport width */
     height: 800px; /* Adjust height as needed */
-    background-color:#f6e7c3 ; /* Background color for the full-width box */
+    background-color:#ffffff ; /* Background color for the full-width box */
     z-index: -1; /* Places it underneath all other elements */
     top: 110%;
     left: 0; /* Start from the left edge */
     display: flex; /* Flexbox for content alignment */
     justify-content: center; /* Centers the text horizontally */
     align-items: center; /* Centers the text vertically */
-    
+}
+
+.awards-descrip{
+    color: #0d1fa9;
 }
 
 

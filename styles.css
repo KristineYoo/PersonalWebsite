@@ -412,9 +412,9 @@ body {
 .project-box h1{
     position: absolute;
     top: 15%;
-    left: -43%; /* Adjust the distance from the right edge */
+    left: -40%; /* Adjust the distance from the right edge */
     font-size: 190px; /* Set the font size */
-    color: #cd2e18; /* Text color */
+    color: #717a35; /* Text color */
     z-index: 10; /* Ensure it stays above other content */
     font-weight: 10; 
     margin-top: 10px;
@@ -425,12 +425,120 @@ body {
 
 }
 
-  .vertical-line {
+  .vertical-line1 {
     width: 2px;
     height: 100px;
     background-color: black;
   }
   
+
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    background: #EB523F; /* Background color */
+    margin-top: 857px;
+    color: #e9dfe5; /* Text color */
+    padding: 10px 0;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 5s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  }
+  
+
+
+  .cert1 {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    background: #ea3699; /* Background color */
+    margin-top: 770px;
+    color: #e9dfe5; /* Text color */
+    padding: 10px 0;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .cert1-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes cert1 {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  }
+  
+
+  .cert2 {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    background: #832C2E; /* Background color */
+    margin-top: 943px;
+    color: #e9dfe5; /* Text color */
+    padding: 10px 0;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .cert2-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 3s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes cert2 {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  }
+  .zigzag-container {
+    position: relative; /* Ensures the zigzag frame can overlay other elements */
+    width: 100%;
+    height: 100vh; /* Adjust based on your content */
+  }
+
+  .zigzag-frame {
+    position: relative;
+    top: 50px; /* Move it down as needed */
+    left: 50px; /* Move it right as needed */
+    z-index: 10; /* Ensures it stays on top */
+    pointer-events: none; /* Prevents it from interfering with clicks */
+  }
+
+.cert-box {
+    position: absolute; /* Position it underneath everything */
+    width: 100%; /* 100% of the viewport width */
+    height: 800px; /* Adjust height as needed */
+    background-color:#f6e7c3 ; /* Background color for the full-width box */
+    z-index: -1; /* Places it underneath all other elements */
+    top: 110%;
+    left: 0; /* Start from the left edge */
+    display: flex; /* Flexbox for content alignment */
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    
+}
+
+
+
 
 
 

@@ -1,0 +1,436 @@
+
+
+
+body {
+    background-color: #efeeee;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensures body takes up full height */
+    font-family: "Playfair Display", serif;
+   
+}
+
+  
+.text-bar {
+    background-color: #F2F0EF; /* Dark green background */
+    color: #484747; /* White text */
+    text-align: center; /* Center-align the text */
+    position:fixed;
+    padding: 0;
+    margin:0;
+    width: 100%;
+    font-size: 88px; /* Adjust font size */
+    font-weight: bold; /* Optional: Makes the text bold */
+    z-index: 1400; /* Ensures it stays on top */
+}
+.text-bar p{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.menu-bar {
+    background-color: #F2F0EF;
+    display: flex;
+    justify-content: space-around; /* Even spacing across the screen */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 13%;
+    width: 100%;
+    z-index: 1000; /* Ensures menu is always on top */
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Makes the menu span the full width */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for 3D effect */
+}
+
+.menu-bar ul li {
+    flex: 1; /* Makes each item take up equal space */
+    text-align: center; /* Centers text within each button */
+}
+
+.menu-bar ul li a {
+    display: block;
+    color: #4a4948;
+    text-decoration: none;
+    padding: 14px 0; /* Adds vertical padding */
+    transition: transform 0.3s ease;
+}
+
+.menu-bar ul li a:hover {
+    background-color: #e8e7e6; /* Hover effect */
+    transform: scale(1.1);
+    color: #bd3f15;
+}
+
+/* Header Image (h1) */
+.tree {
+    display: flex;
+    justify-content: flex-start; /* Aligns the image to the right */
+    margin: 0;
+    align-items: center; /* Centers the image vertically */
+    transition: all 0.2s ease-in-out;
+}
+.tree:hover {
+    transform: scale(1.03); 
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Flower Image (h2) - Aligned to the Right */
+.pinkflower {
+    position: absolute; /* Allows positioning anywhere */
+    width: 350px; /* Adjust the size */
+    height: auto;
+    top: 420px; /* Moves it down to the desired position */
+    right: -10%; /* Centers the image horizontally */
+    z-index: 3; /* Higher than both the box and full-width box */
+    transition: all 0.2s ease-in-out;
+}
+.pinkflower:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Content Box */
+.box {
+    position: absolute; /* Positions it over the content */
+    top: 55%; /* Centers the box vertically */
+    left: 50%; /* Centers the box horizontally */
+    transform: translate(-50%, -50%); /* Centers the box exactly */
+    width: 850px; /* Set a specific width */
+    height: 567.2px; /* Set a specific height */
+    background-color: #e3e1e0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for 3D effect */
+    z-index: 2; /* Ensures the box stays above other content */
+    font-size: 30px;
+    text-align: right;
+    transition: all 0.3s ease-in-out;
+   
+}
+.box:hover h3 {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+.box:hover {
+    background-color: #F2F0EF;
+}
+
+
+.box h3{
+    font-size: 40px;
+    padding-right: 130px;
+    padding-bottom: 0px;
+
+}
+
+
+.box p{
+    padding-right: 20px;
+    padding-left: 450px;
+    font-size: 20px;
+}
+
+
+  
+
+.box img {
+    position: absolute; /* Position image inside the box */
+    top: 50%; /* Center image vertically */
+    left: 25%; /* Center image horizontally */
+    transform: translate(-50%, -50%); /* Offset the image to perfectly center it */
+    width: 425px; /* Set the image size */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensures the image stays behind text if needed */
+}
+.text-right {
+    position: absolute; /* Fixed to the screen, so it stays in place when scrolling */
+    top: 107%; /* Center vertically */
+    right: 10px; /* Adjust the distance from the right edge */
+    transform: translateY(-50%); /* Center the text exactly vertically */
+    font-size: 70px; /* Set the font size */
+    color: #db5746; /* Text color */
+    z-index: 10; /* Ensure it stays above other content */
+    font-weight: 1000; 
+}
+
+/* Optional: Style the text to add a little margin between lines */
+.text-right p {
+    line-height: 2;
+    margin-bottom: 20px; /* Adjust spacing between paragraphs */
+}
+
+
+.full-width-box {
+    position: absolute; /* Position it underneath everything */
+    width: 100%; /* 100% of the viewport width */
+    height: 800px; /* Adjust height as needed */
+    background-color: #f8e6ea; /* Background color for the full-width box */
+    z-index: -1; /* Places it underneath all other elements */
+    top: 120%;
+    left: 0; /* Start from the left edge */
+    display: flex; /* Flexbox for content alignment */
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    
+}
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+
+  .animated-image {
+    position: fixed;
+    top: 60%;
+    left: -100px;
+    transform: translateY(-50%);
+    animation: moveRight 2s ease-in-out forwards;
+    z-index: 3;
+    width: 100px; /* Smaller size */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  @keyframes moveRight {
+    0% {
+      left: -200px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  .yellowflower {
+    position: absolute;
+    top: -5%; /* Slightly below the box */
+    right: 150px; /* Align to the right */
+    width: 80px; /* Set size */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  .yellowflower:hover  {
+    transform: scale(1.05); 
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+  .yellowflowerLeft {
+    position: absolute;
+    top: 70%; /* Slightly below the box */
+    left: -200px;
+    width: 80px; /* Set size */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  .yellowflowerLeft:hover  {
+    transform: scale(1.05); 
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+.zoom-box1 {
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 60px;
+    background-color: #717a35; /* This creates the outline */
+    box-sizing: border-box; /* Ensures padding and border are included in the total box size */
+    transition: transform 1s ease; /* Smooth transition for zoom effect */
+    border-radius: 20px;
+    position: relative; 
+}
+
+.zoom-box1.zoomed {
+    transform: scale(1.2); /* Zoom in when the class is added */
+   
+}
+.zoom-box1:hover {
+    background-color: #a578af;
+}
+.zoom-box2 {
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+    background-color: #717a35; /* This creates the outline */
+    box-sizing: border-box; /* Ensures padding and border are included in the total box size */
+    transition: transform 1s ease; /* Smooth transition for zoom effect */
+    border-radius: 20px;
+    position: relative; 
+}
+
+.zoom-box2.zoomed {
+    transform: scale(1.2); /* Zoom in when the class is added */
+   
+}
+
+.zoom-box2:hover {
+    background-color: #a578af;
+}
+
+
+.zoom-box3 {
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+    background-color: #717a35; /* This creates the outline */
+    box-sizing: border-box; /* Ensures padding and border are included in the total box size */
+    transition: transform 1s ease; /* Smooth transition for zoom effect */
+    border-radius: 20px;
+    position: relative; 
+}
+
+.zoom-box3.zoomed {
+    transform: scale(1.2); /* Zoom in when the class is added */
+   
+}
+.zoom-box3:hover {
+    background-color: #a578af;
+}
+.zoom-box4 {
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+    background-color: #717a35; /* This creates the outline */
+    box-sizing: border-box; /* Ensures padding and border are included in the total box size */
+    transition: transform 1s ease; /* Smooth transition for zoom effect */
+    border-radius: 20px;
+    position: relative; 
+}
+
+.zoom-box4.zoomed {
+    transform: scale(1.2); /* Zoom in when the class is added */
+   
+}
+.zoom-box4:hover {
+    background-color: #a578af;
+}
+.zoom-box5 {
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+    background-color: #6b7a89; /* This creates the outline */
+    box-sizing: border-box; /* Ensures padding and border are included in the total box size */
+    transition: transform 1s ease; /* Smooth transition for zoom effect */
+    border-radius: 20px;
+    position: relative; 
+}
+
+.zoom-box5.zoomed {
+    transform: scale(1.2); /* Zoom in when the class is added */
+   
+}
+.zoom-box5:hover {
+    background-color: #e5c067;
+}
+
+.zoom-box6 {
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+    background-color: #6b7a89; /* This creates the outline */
+    box-sizing: border-box; /* Ensures padding and border are included in the total box size */
+    transition: transform 1s ease; /* Smooth transition for zoom effect */
+    border-radius: 20px;
+    position: relative; 
+}
+
+.zoom-box6.zoomed {
+    transform: scale(1.2); /* Zoom in when the class is added */
+   
+}
+.zoom-box6:hover {
+    background-color: #e5c067;
+}
+.zoom-box1 h1{
+    padding-right: 60%;
+    padding-left: 1%;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    margin: 0;
+}
+.zoom-box1 h2{
+    padding-right: 60%;
+    padding-left: 1%;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    font-size: 15px;
+    margin: 0;
+}
+.zoom-box1 h3{
+    padding-right: 60%;
+    padding-left: 1%;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    font-size: 15px;
+    margin: 0;
+}
+.zoom-box1 p{
+    position: relative;
+    padding-right: 1%;
+    padding-left: 40%;
+    top: -65px;
+    padding-bottom: 0px;
+    font-size: 15px;
+    margin: 0;
+}
+
+.project-box {
+    position: absolute; /* Position it underneath everything */
+    width: 80%; /* 100% of the viewport width */
+    height: 800px; /* Adjust height as needed */
+    background-color: #242326; /* Background color for the full-width box */
+    z-index: 1; /* Places it underneath all other elements */
+    top: 214%;
+    right: 0; /* Start from the left edge */
+    display: flex; /* Flexbox for content alignment */
+    justify-content: center; /* Centers the text horizontally */
+    align-items: center; /* Centers the text vertically */
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease;
+
+}
+.project-box h1{
+    position: absolute;
+    top: 15%;
+    left: -43%; /* Adjust the distance from the right edge */
+    font-size: 190px; /* Set the font size */
+    color: #cd2e18; /* Text color */
+    z-index: 10; /* Ensure it stays above other content */
+    font-weight: 10; 
+    margin-top: 10px;
+    writing-mode: vertical-rl; /* Make the text vertical */
+    transform: rotate(180deg); /* Rotate to make text readable from top to bottom */
+    font-family: 'Dancing Script', cursive;
+
+
+}
+
+  .vertical-line {
+    width: 2px;
+    height: 100px;
+    background-color: black;
+  }
+  
+
+
+

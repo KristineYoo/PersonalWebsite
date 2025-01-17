@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+     <title>Personal Website</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <div class="text-bar">
+        <p>Kristine Yoo</p> <!-- Replace with your desired text -->
+    </div>
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experienceandorganizations">Experience and Organizations</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#certificationsandawards">Certifications and Awards</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="tree">
+        
+            <img src="tree.png" alt="A beautiful sunset" width="600" height="1000">
+    </div>
+    <div class="pinkflower">
+        
+            <img src="pinkflower.png" alt="A beautiful flower" width="300" height="300">
+    </div>    
+
+        <!-- The Box Content -->
+        
+    </div>
+    <div class="box">
+        <img src="profilepic.jpeg" alt="Overlay Image" /> <!-- Replace with your image -->
+        <h3 style="color: #bd3f15;">+ about  +</h3>
+       
+        <p>I am a current freshman at Drexel University pursuing a Bachelor of Science in Computer Science on the honors with distinction pathway, I am deeply passionate about innovative applications of artifcial intelligence.</p>
+    </div>
+
+   
+    
+    <div class="full-width-box">
+        
+    </div>
+
+    <div class="container">
+        <img src="bird.png" alt="Moving Image" class="animated-image">
+      </div>
+
+    <div class="yellowflower">
+        <img src="yellowflower.png" alt="Flower Image" class="flower-image">
+    </div>
+    <div class="yellowflowerLeft">
+        <img src="yellowflower.png" alt="Flower Image" class="flower-image">
+    </div>
+
+    <div class="zoom-box1" id="box1">
+        <h1 style="color: #311432;">Chopt Creative Salads (Roslyn Heights, NY)</h1>
+            <h2 style="color: #311432;">Salad Maker</h2>
+                <h3 style="color: #311432;">April 2024 - September 2024</h3>
+                <p style="color: #311432;">  As a salad maker and cashier, I opened and closed the store, prepped food, and interacted with customers and resolve disputes
+                </p>
+       
+    </div>
+    <div class="zoom-box2" id="box2">
+        <h1>ncwj</h1>
+        <h2> Teachers Assistant</h2>
+    </div>
+    <div class="zoom-box3" id="box3">
+        <p>Box 3 Content</p>
+    </div>
+    <div class="zoom-box4" id="box3">
+        <p>Box 3 Content</p>
+    </div>
+    <div class="zoom-box5" id="box3">
+        <p>Box 3 Content</p>
+    </div>
+    <div class="zoom-box6" id="box3">
+        <p>Box 3 Content</p>
+    </div>
+  
+<script>
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.zoom-box1');
+    const boxRect = box.getBoundingClientRect(); // Get the box's position relative to the viewport
+
+    // Check if the bottom of the box is at or near the bottom of the viewport
+    if (boxRect.bottom >= window.innerHeight) {
+        box.classList.add('zoomed'); // Apply zoom if touching the bottom
+    } else {
+        box.classList.remove('zoomed'); // Remove zoom if not touching the bottom
+    }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.zoom-box2');
+    const boxRect = box.getBoundingClientRect(); // Get the box's position relative to the viewport
+
+    // Check if the bottom of the box is at or near the bottom of the viewport
+    if (boxRect.bottom >= window.innerHeight) {
+        box.classList.add('zoomed'); // Apply zoom if touching the bottom
+    } else {
+        box.classList.remove('zoomed'); // Remove zoom if not touching the bottom
+    }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.zoom-box3');
+    const boxRect = box.getBoundingClientRect(); // Get the box's position relative to the viewport
+
+    // Check if the bottom of the box is at or near the bottom of the viewport
+    if (boxRect.bottom >= window.innerHeight) {
+        box.classList.add('zoomed'); // Apply zoom if touching the bottom
+    } else {
+        box.classList.remove('zoomed'); // Remove zoom if not touching the bottom
+    }
+});
+</script>
+
+<script>
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.zoom-box4');
+    const boxRect = box.getBoundingClientRect(); // Get the box's position relative to the viewport
+
+    // Check if the bottom of the box is at or near the bottom of the viewport
+    if (boxRect.bottom >= window.innerHeight) {
+        box.classList.add('zoomed'); // Apply zoom if touching the bottom
+    } else {
+        box.classList.remove('zoomed'); // Remove zoom if not touching the bottom
+    }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.zoom-box5');
+    const boxRect = box.getBoundingClientRect(); // Get the box's position relative to the viewport
+
+    // Check if the bottom of the box is at or near the bottom of the viewport
+    if (boxRect.bottom >= window.innerHeight) {
+        box.classList.add('zoomed'); // Apply zoom if touching the bottom
+    } else {
+        box.classList.remove('zoomed'); // Remove zoom if not touching the bottom
+    }
+});
+</script>
+<script>
+    window.addEventListener('scroll', function() {
+    const box = document.querySelector('.zoom-box6');
+    const boxRect = box.getBoundingClientRect(); // Get the box's position relative to the viewport
+
+    // Check if the bottom of the box is at or near the bottom of the viewport
+    if (boxRect.bottom >= window.innerHeight) {
+        box.classList.add('zoomed'); // Apply zoom if touching the bottom
+    } else {
+        box.classList.remove('zoomed'); // Remove zoom if not touching the bottom
+    }
+});
+</script>
+
+
+<div class="text-right">
+    <p>Experience and Organizations</p>
+    
+</div>
+
+<div class="project-box">
+    <h1>Projects</h1>
+</div>
+
+<div class="vertical-line"></div>
+
+
+
+</body>
+
+</html>
+
+
